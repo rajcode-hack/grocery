@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grocery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!--font awesome cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="./grocery.css" />
+  </head>
+
+  <body>
+    <!--header section starts-->
+    <section class="header">
+      <a href="#" class="logo"
+        ><i class="fa-sharp fa-solid fa-basket-shopping"></i>grocery</a
+      >
+      <div class="navbar">
+        <nav>
+          <a href="#home">home</a>
+          <a href="#features">features</a>
+          <a href="#products">products</a>
+          <a href="#categories">categories</a>
+          <a href="#review">review</a>
+          <a href="#blogs">blogs</a>
+        </nav>
+      </div>
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+      <form class="search-form">
+        <input
+          type="search"
+          id="search-box"
+          placeholder="search here..."
+          name=""
+        />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="img/water melon 1.jpg" />
+          <div class="content">
+            <h3>watermelon</h3>
+            <span class="price">$5.99/-</span>
+            <span class="quantity">qty:1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="img/onion.webp" />
+          <div class="content">
+            <h3>onion</h3>
+            <span class="price">$5.99/-</span>
+            <span class="quantity">qty:1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="img/chicken.jpg" />
+          <div class="content">
+            <h3>chicken</h3>
+            <span class="price">$5.99/-</span>
+            <span class="quantity">qty:1</span>
+          </div>
+        </div>
+        <div class="total">total: $17.96/-</div>
+        <a href="#" class="btn">checkout</a>
+      </div>
+      <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="enter your email" class="box" />
+        <input type="password" placeholder="enter your password" class="box" />
+        <p>forget password<a href="#">click here</a></p>
+        <p>dont hav an account<a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn" name="" />
+      </form>
+    </section>
+    <!--header setion ends-->
+    <!--home section starts-->
+    <section class="home" id="home">
+      <div class="content">
+        <!-- <img src="./img/background image.jpg" alt="background" /> -->
+        <h3>fresh and <span>organic</span>products for your</h3>
+        <p>
+          "Life is like waiting in line at the grocery store. You wait, you
+          slowly move forward, you pay the price, then you exit unsatisfied and
+          broke." ~ Erin McCarthy
+        </p>
+        <a href="#" class="btn">shop now</a>
+      </div>
+    </section>
+    <!--home section ends-->
+    <!--features section starts-->
+    <section class="features" id="features">
+      <h1 class="heading">our<span>features</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="./img/organic farming.jpg" />
+          <h3>fresh and organic</h3>
+          <p>
+            "Our grocery store now has self-checkout, for your convenience. It's
+            like getting punched in the throat, for your comfort." ~ Dana Gould
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+          <img src="./img/free delivery.jpg" />
+          <h3>free delivery</h3>
+          <p>
+            "Our grocery store now has self-checkout, for your convenience. It's
+            like getting punched in the throat, for your comfort." ~ Dana Gould
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+          <img src="./img/easy payment.webp" />
+          <h3>easy payment</h3>
+          <p>
+            "Our grocery store now has self-checkout, for your convenience. It's
+            like getting punched in the throat, for your comfort." ~ Dana Gould
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+      </div>
+    </section>
+
+    <!--features section ends-->
+    <!--products section starts-->
+    <section class="products" id="products">
+      <h1 class="heading">our<span>products</span></h1>
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="./img/fresh orange.jpg" />
+            <h3>fresh orange</h3>
+            <div class="price">$4.99/- -10.99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./img/fresh onion.jpg" />
+            <h3>fresh onion</h3>
+            <div class="price">$4.99/- -10.99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./img/avacado.jpg" />
+            <h3>fresh avacado</h3>
+            <div class="price">$4.99/- -10.99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./img/carrot.webp" />
+            <h3>fresh carrot</h3>
+            <div class="price">$4.99/- -10.99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./img/green lemon.jpeg" />
+            <h3>green lemon</h3>
+            <div class="price">$4.99/- -10.99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="./img/potato.jpg" />
+            <h3>fresh potato</h3>
+            <div class="price">$4.99/- -10.99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--products section ends-->
+    <!--categories section starts-->
+    <section class="categories" id="categories">
+      <h1 class="heading">product<span>categories</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="./img/fresh vegie.jpg" />
+          <h3>vegitables</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn">shop now</a>
+        </div>
+        <div class="box">
+          <img src="./img/fresh fruits.jpg" />
+          <h3>fresh fruits</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn">shop now</a>
+        </div>
+        <div class="box">
+          <img src="./img/dairy products.jpg" />
+          <h3>dairy products</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn">shop now</a>
+        </div>
+        <div class="box">
+          <img src="./img/fresh meat.webp" />
+          <h3>fresh meat</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn">shop now</a>
+        </div>
+      </div>
+    </section>
+    <!-----------------------------------categories section ends-------------------------->
+
+    <!------------------------------------review section starts----------------------------->
+    <section class="review" id="review">
+      <h1 class="heading">customer's<span>review</span></h1>
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="./img/review image1.jpg" />
+            <p>
+              "Go to the grocery store and buy better things. Buy quality, buy
+              organic, buy natural, go to the farmers market. Immediately that's
+              going to increase the quality of the food you make." ~ Michael
+              Symon
+            </p>
+            <h3>john deo</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./img/review image2.jpg" />
+            <p>
+              "Go to the grocery store and buy better things. Buy quality, buy
+              organic, buy natural, go to the farmers market. Immediately that's
+              going to increase the quality of the food you make." ~ Michael
+              Symon
+            </p>
+            <h3>michael</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./img/review image3.jpg" />
+            <p>
+              "Go to the grocery store and buy better things. Buy quality, buy
+              organic, buy natural, go to the farmers market. Immediately that's
+              going to increase the quality of the food you make." ~ Michael
+              Symon
+            </p>
+            <h3>laxmibai</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./img/review image4.jpg" />
+            <p>
+              "Go to the grocery store and buy better things. Buy quality, buy
+              organic, buy natural, go to the farmers market. Immediately that's
+              going to increase the quality of the food you make." ~ Michael
+              Symon
+            </p>
+            <h3>saroja</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./img/image5.jpg" />
+            <p>
+              "Go to the grocery store and buy better things. Buy quality, buy
+              organic, buy natural, go to the farmers market. Immediately that's
+              going to increase the quality of the food you make." ~ Michael
+              Symon
+            </p>
+            <h3>nisha</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./img/image6.jpg" />
+            <p>
+              "Go to the grocery store and buy better things. Buy quality, buy
+              organic, buy natural, go to the farmers market. Immediately that's
+              going to increase the quality of the food you make." ~ Michael
+              Symon
+            </p>
+            <h3>cathrine</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./img/image7.jpg" />
+            <p>
+              "Go to the grocery store and buy better things. Buy quality, buy
+              organic, buy natural, go to the farmers market. Immediately that's
+              going to increase the quality of the food you make." ~ Michael
+              Symon
+            </p>
+            <h3>pooja</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./img/image8.jpg" />
+            <p>
+              "Go to the grocery store and buy better things. Buy quality, buy
+              organic, buy natural, go to the farmers market. Immediately that's
+              going to increase the quality of the food you make." ~ Michael
+              Symon
+            </p>
+            <h3>laal singh</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./img/image9.webp" />
+            <p>
+              "Go to the grocery store and buy better things. Buy quality, buy
+              organic, buy natural, go to the farmers market. Immediately that's
+              going to increase the quality of the food you make." ~ Michael
+              Symon
+            </p>
+            <h3>javeri bhai</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--review section ends-->
+    <!--blogs section stars-->
+    <section class="blogs" id="blogs">
+      <h1 class="heading">our<span>blogs</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="./img/blogs img1.jpg" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-user"></i>by user</a>
+              <a href="#"><i class="fas fa-calendar"></i>4 nov,2022</a>
+            </div>
+            <h3>fresh and organic vegitables and fruits</h3>
+            <p>
+              "I have a very normal life. I go to the grocery store, I go to
+              Target. I don't have an assistant, I don't have an entourage." ~
+              Angela Kinsey
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./img/blogs img2.jpg" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-user"></i>by user</a>
+              <a href="#"><i class="fas fa-calendar"></i>4 nov,2022</a>
+            </div>
+            <h3>fresh and organic vegitables and fruits</h3>
+            <p>
+              "I have a very normal life. I go to the grocery store, I go to
+              Target. I don't have an assistant, I don't have an entourage." ~
+              Angela Kinsey
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./img/fruits.jpg" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-user"></i>by user</a>
+              <a href="#"><i class="fas fa-calendar"></i>4 nov,2022</a>
+            </div>
+            <h3>fresh and organic vegitables and fruits</h3>
+            <p>
+              "I have a very normal life. I go to the grocery store, I go to
+              Target. I don't have an assistant, I don't have an entourage." ~
+              Angela Kinsey
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------------------blogs section ends-------------------------------------->
+    <!---------------------------------footer section starts-------------------------->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>grocery<i class="fas fa-shopping-basket"></i></h3>
+          <p>
+            "Do you work at the grocery store? Then why are you checking me
+            out?" ~ Lisi Harrison
+          </p>
+          <div class="share">
+            <a href="Rajshekhar Dasa" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="rajshekhar5529" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#" class="links"><i class="fas fa-mobile"></i>7259483845</a>
+          <a href="#" class="links"
+            ><i class="fas fa-envelope"></i>rajshekhard92@gmail.com</a
+          >
+
+          <a href="#" class="links"
+            ><i class="fas fa-map-marker-alt"></i>bidar, india -585412</a
+          >
+        </div>
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#" class="links"><i class="fas fa-mobile"></i>7259483845</a>
+          <a href="#" class="links"
+            ><i class="fas fa-envelope"></i>rajshekhard92@gmail.com</a
+          >
+
+          <a href="#" class="links"
+            ><i class="fas fa-map-marker-alt"></i>bidar, india -585412</a
+          >
+        </div>
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#" class="links"><i class="fas fa-arrow-right"></i>home</a>
+          <a href="#" class="links"
+            ><i class="fas fa-arrow-right"></i>features</a
+          >
+
+          <a href="#" class="links"
+            ><i class="fas fa-arrow-right"></i>products</a
+          >
+
+          <a href="#" class="links"
+            ><i class="fas fa-arrow-right"></i>categories</a
+          >
+
+          <a href="#" class="links"><i class="fas fa-arrow-right"></i>blogs</a>
+        </div>
+        <div class="box">
+          <h3>news letter</h3>
+          <p>subscribe for latest updates</p>
+          <input type="email" placeholder="your email" class="email" />
+          <input type="submit" value="subscribe" class="btn" />
+        </div>
+      </div>
+      <div class="credit">
+        created by <span>mr.rajshekhar</span>|all rights reserved
+      </div>
+    </section>
+    <!--footer section ends-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--custom js file link -->
+    <script src="./grocery.js"></script>
+  </body>
+</html>
